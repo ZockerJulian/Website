@@ -1,2 +1,9 @@
-run: |
-  echo "${{ secrets.INDEX_KEY }}"
+<html>
+
+<title>Web</title>
+
+<body>
+</body>
+
+
+</html>
