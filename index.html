@@ -1,5 +1,14 @@
-<script>
-<!--
-document.write(unescape("%3Chtml%3E%0A%0A%3Ctitle%3EWeb%3C/title%3E%0A%0A%3Cbody%3E%0A%3C/body%3E%0A%0A%0A%3C/html%3E%0A"));
-//-->
-</script>
+name: Use Secret Example
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  secret-access-job:
+    runs-on: self-hosted  # Or replace this with any suitable runner
+
+    steps:
+      - run: |
+          echo "${{ secrets.INDEX_KEY }}"
