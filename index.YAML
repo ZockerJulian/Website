@@ -1,14 +1,2 @@
-name: Use Secret Example
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  secret-access-job:
-    runs-on: self-hosted  # Or replace this with any suitable runner
-
-    steps:
-      - run: |
-          echo "${{ secrets.INDEX_KEY }}"
+run: |
+  echo "${{ secrets.INDEX_KEY }}"
